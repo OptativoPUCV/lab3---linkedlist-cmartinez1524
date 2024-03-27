@@ -11,14 +11,13 @@ struct Node {
     Node * prev;
 };
 
-typedef List List;
-
 struct List {
     Node * head;
     Node * tail;
     Node * current;
 };
 
+typedef List List;
 
 Node * createNode(void * data) 
 {
@@ -33,9 +32,9 @@ Node * createNode(void * data)
 List * createList() 
 {
     List * new = (List *)malloc(sizeof(List));
-    List->head = new;
-    List->tail = new;
-    List->current = new;
+    List.head = new;
+    List.tail = new;
+    List.current = new;
     return new;
 }
 
