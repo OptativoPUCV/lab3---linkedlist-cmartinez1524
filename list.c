@@ -31,11 +31,15 @@ Node * createNode(void * data)
 
 List * createList() 
 {
-    List * new = (List *)malloc(sizeof(List));
-    List.head = new;
-    List.tail = new;
-    List.current = new;
-    return new;
+    List * new_list = (List *)malloc(sizeof(List));
+    if (new_list == NULL) {
+        // Manejo del error de asignación de memoria
+        return NULL;
+    }
+    new_list->head = NULL;
+    new_list->tail = NULL;
+    new_list->current = NULL;
+    return new_list;
 }
 
 void * firstList(List * list) {
