@@ -19,3 +19,19 @@ list.c:36:5: error: ‘list’ undeclared (first use in this function); did you 
 list.c:36:5: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 fb6a6ba
+Wed 27 Mar 2024 11:32:35 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:35:9: error: expected identifier or ‘(’ before ‘->’ token
+   35 |     List->head = new;
+      |         ^~
+list.c:36:9: error: expected identifier or ‘(’ before ‘->’ token
+   36 |     List->tail = new;
+      |         ^~
+list.c:37:9: error: expected identifier or ‘(’ before ‘->’ token
+   37 |     List->current = new;
+      |         ^~
+Compilation failed
+f6a59d2
