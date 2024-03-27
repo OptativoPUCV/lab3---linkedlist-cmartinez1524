@@ -4,3 +4,18 @@ Wed 27 Mar 2024 11:27:08 PM UTC:
  tests:  0|6
 total_score: 0/70
 8c9dfaf
+Wed 27 Mar 2024 11:32:16 PM UTC: 
+ list.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:35:9: error: expected identifier or ‘(’ before ‘->’ token
+   35 |     List->head = new;
+      |         ^~
+list.c:36:5: error: ‘list’ undeclared (first use in this function); did you mean ‘List’?
+   36 |     list->tail = new;
+      |     ^~~~
+      |     List
+list.c:36:5: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+fb6a6ba
