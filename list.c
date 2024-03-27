@@ -11,13 +11,14 @@ struct Node {
     Node * prev;
 };
 
+typedef List List;
+
 struct List {
     Node * head;
     Node * tail;
     Node * current;
 };
 
-typedef List List;
 
 Node * createNode(void * data) 
 {
