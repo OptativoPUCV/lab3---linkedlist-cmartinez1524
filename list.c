@@ -55,12 +55,12 @@ void * firstList(List * list)
 
 void * nextList(List * list) 
 {
-    if (list->current->next == NULL)
+    if (list == NULL || list->current == NULL || list->current->next == NULL)
     {
         return NULL;
     }
-    else
-        list->current = list->current->next;
+    
+    list->current = list->current->next;
     return list->current->data;
 }
 
