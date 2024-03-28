@@ -146,3 +146,9 @@ list.c:102:19: error: ‘Node’ has no member named ‘tail’
       |                   ^~
 Compilation failed
 cb1fc5d
+Thu 28 Mar 2024 12:05:15 AM UTC: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ tests:  9|3
+total_score: 35/70
+3111a20
